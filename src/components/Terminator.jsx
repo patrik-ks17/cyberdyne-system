@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Terminator = (props) => {
+const Terminator = ({id, name, serialNumber}) => {
+	//const {id, name, serialNumber} = props;
 	return(
-		<div className='bg-light-blue dib br3 pa3 ma2 grow'>
-			<img src='https://robohash.org/t?size=180x180' alt='terminator' />
+		<div className='bg-light-blue dib br3 pa3 ma2 grow tc'>
+			<img src={`https://robohash.org/${id}?size=180x180`} alt='terminator' />
 			<div>
-			 	<h2>{props.name}</h2>
-    			<p>SN: {props.serialNumber}</p>
+			 	<h2>{name}</h2>
+    			<p>SN: {serialNumber}</p>
 			</div>
 		</div>
   );
