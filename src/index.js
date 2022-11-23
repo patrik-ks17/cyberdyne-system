@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'tachyons';
-import {models} from './models.js';
-import TerminatorList from './components/TerminatorList';
-
+import App from './App.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <TerminatorList models={models}/>
+  <App />
 );
 
 // If you want to start measuring performance in your app, pass a function
